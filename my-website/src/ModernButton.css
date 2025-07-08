@@ -1,0 +1,32 @@
+.modern-btn {
+  background: linear-gradient(90deg, #4f8cff 0%, #3358e0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modern-btn:hover {
+  background: linear-gradient(90deg, #3358e0 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.05);
+}
+
+@media (max-width: 700px) {
+  .modern-btn {
+    background: transparent !important;
+    color: #fff !important; /* Font color is now white */
+    box-shadow: none !important;
+    border: none !important;
+    transition: color 0.2s;
+  }
+  .modern-btn:hover {
+    background: rgba(255,255,255,0.1) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+  }
+}
